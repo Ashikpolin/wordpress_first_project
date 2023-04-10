@@ -1,0 +1,122 @@
+/*===========
+Common css
+=============*/
+body{
+    font-family: 'Kaisei Decol', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5em;
+}
+.logo {
+    width: 100%;
+}
+
+/*===========
+Header area css
+=============*/
+#header-area {
+    padding: 15px;
+}
+
+/* nav menu */
+.menu_items ul{
+    font-family: "Oswald", sans-serif;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    padding: 0;
+}
+
+.menu_items ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu_items ul li a {
+    color: #135e53;
+    padding: 20px 10px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu_items ul li a:hover {
+    background: #ea1a70;
+    color: #fff;
+}
+
+/*Dropdown Menu*/
+.menu_items ul li ul {
+    background: #262626 none repeat scroll 0 0;
+    left: -99999px;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 62px;
+    width: 200px;
+}
+
+.menu_items ul li:hover ul {
+    left: 0px;
+}
+
+.menu_items ul li ul li {
+    display: block;
+}
+
+.menu_items ul li ul li a {
+    color: #fff;
+    padding: 8px 10px;
+}
+
+.menu_items ul li ul li a:hover {
+    background: #ddd;
+    color: #262626;
+}
+
+.menu_items ul li:hover a {
+    background: #ea1a70;
+    color: #fff;
+}
+
+.menu_items ul li:hover ul li a {
+    background: none;
+    color: #fff;
+}
+
+/*Sub Dropdown Menu*/
+.menu_items ul li ul ul {
+    left: -99999px;
+    top: 0;
+    position: absolute;
+}
+
+.menu_items ul li:hover ul li ul {
+    left: -999999px;
+}
+
+.menu_items ul li ul li:hover ul {
+    left: 185px;
+}
+
+.menu_items ul li ul li:hover a {
+    background: #ea1a70;
+    color: #fff;
+}
+
+.menu_items ul ul li:hover ul li a {
+    background: #262626;
+    color: #fff;
+}
+
+.menu_items ul ul li ul li a:hover {
+    background: #ea1a70;
+    color: #fff;
+}
